@@ -1,15 +1,18 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es5",
+    "lib": ["es2015", "dom"],
     "module": "esnext",
-    "strict": true,
-    "jsx": "preserve",
     "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "skipLibCheck": true,
+    "strict": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
     "useDefineForClassFields": true,
     "sourceMap": true,
     "baseUrl": ".",
@@ -21,12 +24,6 @@
         "src/*"
       ]
     },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
   },
   "include": [
     "src/**/*.ts",
